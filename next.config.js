@@ -4,6 +4,6 @@ module.exports = {
    domains: ['res.cloudinary.com'],
  },
  env: {
-  hostURL: 'http://localhost:3000',
+  hostURL: 'https://pizzastore-react-nextjs.vercel.app/',
 },
 }
