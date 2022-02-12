@@ -1,0 +1,29 @@
+GET  http://localhost:3000/api/products
+
+###
+
+GET http://localhost:3000/api/orders
+
+
+
+###
+POST  http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+	"title": "new pizza",
+	"img": "/img/pizza.png",
+	"desc": "this is sixth pizza",
+	"prices": [14,18,22],
+	"extraOptions": [
+		{
+		"text": "Paneer Cheese", "price": 9
+		},{
+            "text": "Cheese Burst", "price": 7
+        }
+		,{
+            "text": "Smooth Cream", "price": 9
+        }
+	]
+	
+}

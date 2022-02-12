@@ -1,0 +1,168 @@
+.container{
+padding: 50px;
+display: flex;
+}
+
+
+.left{
+    flex: 2;
+}
+
+.right{
+    flex: 1;
+}
+
+.imgContainer{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+}
+
+.table{
+    width: 100%;
+    border-spacing: 20px;
+}
+
+
+.name{
+    font-weight: 500;
+    color: #d1411e;
+    font-size: 18px;
+}
+
+
+.total{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.wrapper{
+    width: 90%;
+    max-height: 350px;
+    background-color: #333;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.totalTextTitle{
+    margin-right: 10px;
+}
+
+.button{
+    height: 30px;
+    color: #d1411e;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.payButton{
+ padding: 10px 5px;
+ cursor: pointer;
+ margin-bottom: 10px;
+ background-color: #d1411e;
+ color: #fff;
+ font-weight: 600;
+ border: none;
+ border-radius: 4px;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ -ms-border-radius: 4px;
+ -o-border-radius: 4px;
+}
+
+.payButton:hover{
+    background-color: #993b23;
+    color: #fff;
+}
+
+.paymentgateway{
+    width: 90%;
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin-top: 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+#rzp-button1{
+    background-color: blue 
+}
+
+
+
+@media screen and (max-width:480px) {
+    .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .table{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trTitle{
+        display: none;
+    }
+
+    .tr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .name, .total{
+        font-size: 24px;
+    }
+
+    .imgContainer{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .extras,.price,.quantity{
+        font-size: 18px;
+    }
+
+
+    .price::before{
+        content: "Price: ";
+        font-weight: 500;
+    }
+
+
+    .quantity::before{
+        content: "Qty: ";
+        font-weight: 500;
+    }
+
+    .total::before{
+        content: "Total: ";
+        font-weight: 500;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+    .paymentgateway{
+        width: 100%;
+        z-index: -1;
+    }
+}

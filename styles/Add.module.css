@@ -1,0 +1,107 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(245, 240, 240, 0.548);
+    position: fixed;
+    top: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 35%;
+}
+
+
+.wrapper{
+    background-color: white;
+    padding: 100px;
+    width: 500px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.priceContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputsm{
+    width: 25%;
+}
+
+.extra{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.extraItems{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.extraItem{
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid tomato;
+    background-color: white;
+    color: tomato;
+    margin-right: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.addButton{ width: 75%; border: none; background-color: teal; color: white; font-weight: 500; cursor: pointer; padding: 8px 0; align-self: center; font-size: 18px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;
+}
+
+.addButton:hover{
+    background-color: tomato;
+}
