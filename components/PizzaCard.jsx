@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const PizzaCard = ({pizza}) => {
+    console.log("this is data from pizza card" +  pizza)
     return (
         <div className={style.container}>
         <Link href={`/product/${pizza._id}`} passHref>

@@ -10,11 +10,16 @@ export default async function handler(req, res) {
 
     if(method === 'GET'){
 
-      
-
+      try{
+           
         const product = await Product.findById(id);
         res.status(200).json(product);
        // console.log(product);
+
+      }catch(err){
+        console.log("error finding single product form backend" +  err);
+      }
+   
     }
 
     if(method === 'PUT'){

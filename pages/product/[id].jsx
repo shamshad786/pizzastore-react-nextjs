@@ -96,7 +96,7 @@ export const getServerSideProps = async({params}) =>{
 
     //TODO: For Production
     const res = await axios.get(`${process.env.hostURL}/api/products/${params.id}`);
-    console.log(res)
+   // console.log(res)
     return{
         props:{
             pizza: res.data
